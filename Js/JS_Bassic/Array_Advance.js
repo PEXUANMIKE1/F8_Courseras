@@ -34,7 +34,7 @@ var courses = [
 
 /* 
 
- - forEach() // duyệt qua từng phần tử
+ - forEach() // duyệt qua từng phần tử và k trả về giá trị gì cả
     courses.forEach(function(course,index){
       console.log(`Index: ${index}`);
       console.log(`Data:`,course);
@@ -63,21 +63,29 @@ var courses = [
 
 
  - find() kiểm tra theo đk, nếu đúng thì trả về phần tử đó, sai thì undefined
-        Nhưng chỉ trả về 1 phần tử trong mảng thỏa mãn
-  
-      var course = courses.some(function(course,index){
+        Nhưng chỉ trả về phần tử đầu tiên trong mảng thỏa mãn
+        
+      array.find(callback(element, index, array), thisArg);
+      - element: Phần tử hiện tại trong mảng đang được kiểm tra.
+      - index (tùy chọn): Chỉ mục (index) của phần tử hiện tại trong mảng.
+      - array (tùy chọn): Mảng gốc mà phương thức find() được gọi
+      - thisArg (tùy chọn): Giá trị để sử dụng làm this khi thực thi hàm callback.
+        Nếu không được cung cấp, undefined sẽ được sử dụng làm this.
+
+      var course = courses.find(function(course,index){
         return course.name === 'PHP'
       });
       console.log(course) 
 
- - filter() kiểm tra toàn bộ mảng và trả về toàn bộ các phần tử thỏa mãn ĐK, sai thì undefined
+ - filter() kiểm tra toàn bộ mảng và trả về mảng mới bao gồm
+   các phần tử thỏa mãn ĐK, sai tất thì undefined
   
-      var course = courses.some(function(course,index){
+      var course = courses.filter(function(course,index){
         return course.name === 'PHP'
       });
       console.log(course) 
   
- - map() duyệt qua từng phần tử và trả về dữ liệu các phần tử vào trong 1 mảng mới.
+ - map() duyệt qua từng phần tử và trả về dữ liệu value,index của phần tử đó.
         và có thể điều chỉnh trả về theo mong muốn.
 
     vd1:
