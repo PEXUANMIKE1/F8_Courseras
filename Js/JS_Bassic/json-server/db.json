@@ -1,0 +1,116 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Bài viết mới của tôi",
+      "content": "Xin chào các bạn tôi tên là Vũ Phi Trường. Rất vui được làm quen!",
+      "views": 2300
+    },
+    {
+      "id": "2",
+      "title": "Chia sẻ khóa học PHP",
+      "content": "lorem ipsum dolor sit amet",
+      "views": 100
+    },
+    {
+      "id": "3",
+      "title": "Chia sẻ khóa học .Net",
+      "content": "lorem ipsum dolor sit amet ok",
+      "views": 1500
+    },
+    {
+      "id": "4",
+      "title": "Chia sẻ khóa học java",
+      "content": "Bài viết mới của tôi",
+      "views": 3000
+    },
+    {
+      "id": "5",
+      "title": "Chia sẻ khóa học React",
+      "content": "Bài viết mới của tôi",
+      "views": 5300
+    },
+    {
+      "id": "6",
+      "title": "Chia sẻ khóa học Vue",
+      "content": "Bài viết mới của tôi",
+      "views": 1200
+    },
+    {
+      "id": "7",
+      "title": "Chia sẻ khóa học Go",
+      "content": "Bài viết mới của tôi",
+      "views": 400
+    },
+    {
+      "id": "8",
+      "title": "Chia sẻ khóa học Toeic",
+      "content": "Bài viết mới của tôi",
+      "views": 1300
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "userId": 1,
+      "text": "Chào bạn!",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "userId": 2,
+      "text": "Hello!",
+      "postId": "1"
+    },
+    {
+      "id": "6214",
+      "userId": 1,
+      "text": "Tôi là Trường, rất vui được làm quen",
+      "postId": "1"
+    },
+    {
+      "id": "8944",
+      "userId": 1,
+      "text": "Tôi sẽ ủng hộ 1 triệu",
+      "postId": "2"
+    },
+    {
+      "id": "2261",
+      "userId": 1,
+      "text": "ok!",
+      "postId": "5"
+    },
+    {
+      "id": "9de2",
+      "userId": 1,
+      "text": "Hi",
+      "postId": "7"
+    },
+    {
+      "id": "e1a9",
+      "userId": 1,
+      "text": "Hello",
+      "postId": "4"
+    },
+    {
+      "id": "acfa",
+      "userId": 1,
+      "text": "Cho tôi với",
+      "postId": "8"
+    }
+  ],
+  "Users": [
+    {
+      "id": "1",
+      "name": "Vũ Phi Trường",
+      "age": 22,
+      "gender": "Nam"
+    },
+    {
+      "id": "2",
+      "name": "Vũ Thị Tuyết Măng",
+      "age": 22,
+      "gender": "Nữ"
+    }
+  ]
+}

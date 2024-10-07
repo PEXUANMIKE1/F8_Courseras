@@ -7,26 +7,34 @@
   <title>Document</title>
 </head>
 <style>
-  .red {
-    color: gold;
+
+  .post-area ul {
+    list-style-type: none;
+    padding: 10px;
+  }
+
+  .post-area ul li {
+    margin-top: 5px;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .comment-block .cmt-list li{
+    border: none;
+    margin: 0;
+    padding: 6px;
   }
 </style>
 
 <body>
-
   <div>
-    <h3>F1</h3>
+    <input placeholder="Tìm kiếm">
+    <button>Search</button>
+    <div class="html"></div>
   </div>
-  <div>
-    <h3>F2</h3>
+  <div class="post-area">
+    <ul id="post-list"></ul>
   </div>
-  <div>
-    <h3>F3</h3>
-  </div>
-  <div>
-    <h3>F4</h3>
-  </div>
-  <script src="JS_Bassic/HTML_DOM.js"></script>
+  <script src="JS_Bassic/ES6.js"></script>
 </body>
 
 </html>

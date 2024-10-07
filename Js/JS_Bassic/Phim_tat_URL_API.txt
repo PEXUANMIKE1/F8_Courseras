@@ -1,0 +1,32 @@
+* Filters
+
+  = (equals) //so sánh bằng
+  lt (less than) // nhỏ hơn
+  lte (less than or equal to) // nhỏ hơn hoặc bằng
+  gt (greater than) // lớn hơn
+  gte (greater than or equal to) // lớn hơn hoặc bằng
+  ne (not equal to) // không bằng
+
+  - Example: GET /posts?views_gt=9000
+  - Range:
+    + _start
+    + _end
+    + _limit
+  - Examples:
+    GET /posts?_start=10&_end=20
+    GET /posts?_start=10&_limit=10
+
+--------------------------------------------------------------   
+* Paginate
+
+  _page
+  _per_page (default = 10)
+
+  -Example: GET /posts?_page=1&_per_page=25
+
+------------------------------------------------------------------
+* Sort
+
+  _sort=f1,f2
+  
+  - Example: GET /posts?_sort=id,-views

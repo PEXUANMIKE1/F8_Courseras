@@ -107,11 +107,10 @@ var courses = [
               CurrentIndex - Index của phần tử hiện tại
               Array - Mảng đang được xử lý
     VD: tính tổng coin tất cả khóa học
-      var totalCourses = courses.reduce((total, value) 
-            => `${total + value.name}, `, "Khóa học: ")
+      var totalCourses = courses.reduce((total, value) => 
+        total + value.coin, 0)
       console.log(totalCourses)
 */
-
 
 
 /*
